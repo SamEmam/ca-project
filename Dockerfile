@@ -7,11 +7,9 @@ RUN apt-get install -y python-pip
 RUN apt-get install -y git
 RUN git clone https://github.com/SamEmam/ca-project.git
 
-COPY . .
+WORKDIR ca-project/
 
 RUN pip install -r requirements.txt
-
-WORKDIR ca-project/
 
 EXPOSE 5000
 
