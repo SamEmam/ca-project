@@ -1,2 +1,5 @@
 sudo apt install python-minimal
 sudo apt install python3
+sudo pip install flask
+sudo pip install flask_sqlalchemy
+sudo pip install flask-wtf
