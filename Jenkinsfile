@@ -18,7 +18,7 @@ node(''){
         sh 'docker build -t samemam/codedechan:latest .'
     }
     stage('open image'){
-        sh 'docker run -i -d -p 5000:5000 --name sampain samemam/codedechan:latest'
+        sh 'docker run --rm -i -d -p 5000:5000 --name sampain samemam/codedechan:latest'
     }
     stage('curlCheat'){
         sh 'curl localhost:5000'
