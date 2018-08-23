@@ -47,5 +47,7 @@ class TestCase(unittest.TestCase):
         number_of_posts = len(Post.query.all())
         self.assertEqual(number_of_posts,1)
 
+
+
 if __name__ == '__main__':
     unittest.main()
