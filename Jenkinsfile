@@ -17,8 +17,14 @@ node(''){
     stage('Build'){
         sh 'docker build -t samemam/codedechan:latest .'
     }
+    stage('open image'){
+        sh 'docker run -i -p 5000:5000 --name sampain samemam/codedechan:latest'
+    }
     stage('curlCheat'){
-        sh 'curl 35.159.39.198:5000'
+        sh 'curl localhost:5000'
+    }
+    stage('close image'){
+        sh 'docker stop sampain'
     }
     stage('publish'){
         withDockerRegistry(credentialsId: '58be09c9-ccdd-4375-81fd-9c3e2250170b', url: '') {
