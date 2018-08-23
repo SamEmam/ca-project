@@ -18,7 +18,7 @@ node(''){
         deleteDir()
     }
     stage ('Build'){
-        sh 'docker build . -t samemam/codedechan/ca-project:latest'
+        sh 'docker build . -t samemam/codedechan:latest'
     }
 }
     
