@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+     
+#networks:
+
+ # super_epic_network:
+
+# define the networks
