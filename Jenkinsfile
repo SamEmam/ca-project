@@ -14,8 +14,13 @@ node(''){
         pretestedIntegrationPublisher()
 
     }
-    stage ('Build'){
+    stage('Build'){
         sh 'docker build . -t samemam/codedechan:latest'
+    }
+    stage('publish'){
+        withDockerRegistry(credentialsId: 'samdockerhub') {
+            sh 'docker push samemam/decochan:latest'
+        }   
     }
 }
     
