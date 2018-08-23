@@ -18,7 +18,7 @@ node(''){
         sh 'docker build . -t samemam/codedechan:latest'
     }
     stage('publish'){
-        withDockerRegistry(credentialsId: 'samuserdocker') {
+        withDockerRegistry(credentialsId: 'samemam') {
             sh 'docker push samemam/decochan:latest'
         }   
     }
