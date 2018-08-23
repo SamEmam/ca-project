@@ -1,0 +1,2 @@
+sudo apt install python-minimal
+sudo apt install python3
