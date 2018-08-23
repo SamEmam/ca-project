@@ -1,284 +1,63 @@
-    1  docker container run hello-world
-    2  ls
-    3  ls -a
-    4  exit
-    5  ls
-    6  ls -a
-    7  docker container ls -a
-    8  exit
-    9  ls
-   10  exit
-   11  docker pull alpine
-   12  docker image ls
-   13  docker container run alpine ls -l
-   14  docker container run alpine echo "hello from alpine"
-   15  docker container run alpine /bin/sh
-   16  docker container ls
-   17  docker container ls -a
-   18  ls /
-   19  docker container run nginx
-   20  docker container run nginx -p
-   21  docker stop
-   22  docker stop *
-   23  docker containers
-   24  docker containersls
-   25  docker ls
-   26  docker ps
-   27  docker images
-   28  docker container run -p 8000:80 nginx
-   29  ls
-   30  touch Dockerfile
-   31  ls
-   32  nano Dockerfile 
-   33  ls
-   34  git clone https://github.com/praqma-training/docker-exercises/blob/master/labs/6-volumes.md
-   35  ls
-   36  git clone https://github.com/praqma-training/docker-exercises.git
+
+    1  cd clone git@github.com:SamEmam/ca-project.git
+    2  cd ca-project/
+    3  cat requirements.txt 
+    4  sudo apt install python-minimal
+    5  sudo apt install python3
+    6  sudo pip install
+    7  pip install --upgrade pip
+    8  sudo pip install flask
+    9  pip install flask
+   10  sudo pip install flask
+   11  from pip import main
+   12  sudo apt-get install python-virtualenv
+   13  sudo apt-get install python-pip
+   14  virtualenv --version
+   15  ls
+   16  python run.py 
+   17  sudo pip install flask
+   18  ls
+   19  cat requirements.txt 
+   20  git pull
+   21  pip install -r requirements.txt
+   22  sudo apt update 
+   23  sudo pip install -r requirements.txt
+   24  ls
+   25  touch Dockerfile
+   26  git add Dockerfile 
+   27  git commit -m "Added dockerfile"
+   28  git push
+   29  git pull
+   30  ls
+   31  docker build
+   32  docker build Dockerfile
+   33  docker --help
+   34  docker build
+   35  docker build --help
+   36  docker build Dockerfile
    37  ls
-   38  git clone ls
-   39  ls
-   40  cd docker-exercises/
-   41  ls
-   42  cd labs/
-   43  ls
-   44  cd building-an-image/
-   45  ls
-   46  nano Dockerfile 
+   38  docker build -t Dockerfile
+   39  docker build -t dockerfile
+   40  docker build Dockerfile
+   41  docker build -t codeDeCode
+   42  docker build -t codedecode
+   43  docker build codedecode
+   44  git status
+   45  docker build .
+   46  git pull
    47  docker build .
-   48  docker container run -p 8888:5000 --name myfirstapp myfirstapp
-   49  ls
-   50  docker image ls
-   51  docker container run -p 8888:5000 --name 600805abba66 600805abba66
-   52  docker container run -p -d 8888:5000 --name 600805abba66 600805abba66
-   53  docker container run -p 8888:5000 --name 600805abba66 600805abba66 -d
-   54  docker container run -p 8888:5000 --name 600805abba66 600805abba66
-   55  docker ls
-   56  docker container ls
-   57  docker images l
-   58  docker images ls
-   59  docker images ps
-   60  docker container ps
-   61  docker image ls
-   62  docker container run -p 8888:5000 --name 600805abba66 600805abba66
-   63  docker container ls
-   64  docker restart
-   65  docker restart 600805abba66
-   66  docker container stop
-   67  docker container stop 600805abba66
-   68  docker constainer ls
-   69  docker container ls
-   70  docker kill dd8bdbd889aa
-   71  docker container ls
-   72  docker build .
-   73  ls
-   74  docker container run -p 8888:5000 --name 600805abba66 600805abba66
-   75  docker container kill f75f3c76be78fa343f1a89e27d586105045eea4b45c1ead421e4fa5085e38d72
-   76  docker images ps
-   77  docker images ls -a
-   78  docker container ls -a
-   79  docker container run -p 8888:5000 --name f75f3c76be78
-   80  docker container run -p 8888:5000 --name f75f3c76be78 f75f3c76be78
-   81  docker container run -p 8888:5000 --name 600805abba66
-   82  docker container run -p 8888:5000 --name 600805abba66 new
-   83  docker container run -p 8888:5000 --name 600805abba66 600805abba66
-   84  docker remove 600805abba66
-   85  docker container remove 600805abba66
-   86  docker image remove 600805abba66
-   87  docker image remove 600805abba66 --force
-   88  ls
-   89  docker imsage
-   90  docker image
-   91  docker image ps
-   92  docker images ps
-   93  docker container ps
-   94  docker build .
-   95  docker container run -p 8888:5000 --name 67ffaaf88ce2 67ffaaf88ce2
-   96  docker login
-   97  docker image ls
-   98  docker tag 67ffaaf88ce2
-   99  docker tag 67ffaaf88ce2 2rup/newApp:latest
-  100  docker tag 67ffaaf88ce2 2rup/newapp:latest
-  101  docker image ls
-  102  docker pull praqmasofus/newflaskapp
-  103  ls
-  104  docker push 2rup/newapp
-  105  docker pull samemam/newflaskapp
-  106  docker image ps
-  107  docker container ps
-  108  docker images ps
-  109  docker images ls
-  110  docker images ls -a
-  111  docker container ls
-  112  docker container ls -a
-  113  docker container run -p 8888:5000 --name samemam/newflaskapp
-  114  docker container run -p 8888:5000 --name samemam/newflaskapp samemam/newflaskapp
-  115  docker image ls
-  116  docker container run -p 8888:5000 --name samemam/newflaskapp samemam/newflaskapp
-  117  docker container run -p 8888:5000 --name 545ab1454ab8 545ab1454ab8
-  118  docker container run --name mysql-container --rm -p 3306:3306 -e MYSQL_ROOT_PASSWORD=wordpress -d mysql:5.7
-  119  docker container ls
-  120  ifconfig
-  121  docker stop wordpress container
-  122  docker container run --name wordpress-container --rm -e WORDPRESS_DB_HOST=<YOURIP> -e WORDPRESS_DB_PASSWORD=wordpress -p 8080:80 -d wordpress
-  123  docker container run --name wordpress-container --rm -e WORDPRESS_DB_HOST=<172.17.0.1> -e WORDPRESS_DB_PASSWORD=wordpress -p 8080:80 -d wordpress
-  124  docker container ls
-  125  docker container ls -a
-  126  docker container run --name wordpress-container --rm -e WORDPRESS_DB_HOST=172.17.0.1 -e WORDPRESS_DB_PASSWORD=wordpress -p 8080:80 -d wordpress
-  127  ls
-  128  git clone https://github.com/Thorup/jenkins-workshop.git
-  129  ls
-  130  cd jenkins-workshop/
-  131  ls
-  132  cd setup/
-  133  ls
-  134  . setup.sh 
-  135  ls
-  136  cd ..
-  137  ls
-  138  cd setup/
-  139  ls
-  140  cd ..
-  141  ls
-  142  cd ..
-  143  ls
-  144  ssh-keygen
-  145  cat ~/.ssh/id_rsa
-  146  cat ~/.ssh/id_rsa.pub
-  147  ls
-  148  cd jenkins-workshop/
-  149  ls
-  150  cd src/test/java/net/praqma/codeacademy/gildedrose/
-  151  ls
-  152  nano GildedRoseTest.java 
-  153  git status
-  154  git add GildedRoseTest.java 
-  155  ls
-  156  git status
-  157  git commit
-  158  git status
-  159  git commit
-  160  git git config --global user.email "roedthorup@gmail.com"
-  161  git config --global user.name "Thorup"
-  162  git config --global user.email "roedthorup@gmail.com"
-  163  git commit
-  164  git status
-  165  git push
-  166  git pull
-  167  git log
-  168  ls
-  169  git status
-  170  ls
-  171  sudu apt-get install maven -y
-  172  sudo apt-get install maven -y
-  173  git config --global user.email "roedthorup@gmail.com"
-  174  git config --global user.name "Thorup"
-  175  sudo su jenkins
-  176  sudo apt-get install maven -y
-  177  ls
-  178  cd 
-  179  ls
-  180  cd jenkins-workshop/
-  181  ls
-  182  cat Jenkinsfile 
-  183  nano Jenkinsfile 
-  184  git pull
-  185  ls
-  186  sudo apt-get install python-pip
-  187  sudo pip install requests
-  188  git pull
-  189  ls
-  190  cd clone git@github.com:SamEmam/ca-project.git
-  191  mkdir ca-project
-  192  cd ca-project/
-  193  ls
-  194  git clone git@github.com:SamEmam/ca-project.git
-  195  ls
-  196  cd ca-project/
-  197  ls
-  198  cat requirements.txt 
-  199  sudo apt install python-minimal
-  200  sudo apt install python3
-  201  sudo pip install
-  202  pip install --upgrade pip
-  203  sudo pip install flask
-  204  pip install flask
-  205  sudo pip install flask
-  206  from pip import main
-  207  pip
-  208  sudo apt-get install python-virtualenv
-  209  sudo apt-get install python-pip
-  210  pip install flask
-  211  sudo pip install flask
-  212  virtualenv --version
-  213  pip install Flask
-  214  sudu pip install Flask
-  215  ls
-  216  python run.py 
-  217  sudu pip install Flask
-  218  sudo pip install flask
-  219  ls
-  220  cat requirements.txt 
-  221  ls
-  222  git pull
-  223  pip install -r requirements.txt
-  224  git pull
-  225  pip install -r requirements.txt
-  226  sudo apt upadte
-  227  sudo apt update
-  228  pip install -r requirements.txt
-  229  cat requirements.txt 
-  230  sudo pip install -r requirements.txt
-  231  ls
-  232  touch Dockerfile
-  233  git add Dockerfile 
-  234  git commit -m "Added dockerfile"
-  235  git push
-  236  git pull
-  237  ls
-  238  docker build
-  239  docker build Dockerfile
-  240  docker --help
-  241  docker build
-  242  docker build --help
-  243  docker build Dockerfile
-  244  ls
-  245  docker build -t Dockerfile
-  246  docker build -t dockerfile
-  247  docker build Dockerfile
-  248  docker build -t codeDeCode
-  249  docker build -t codedecode
-  250  docker build codedecode
-  251  git status
-  252  docker build .
-  253  git pull
-  254  docker build .
-  255  git pull
-  256  docker build .
-  257  git pull
-  258  docker build .
-  259  git pull
-  260  docker build .
-  261  ls
-  262  git pull
-  263  docker build .
-  264  cat Dockerfile 
-  265  nano Dockerfile 
-  266  docker build .
-  267  docker build . thorup/codedechan
-  268  docker build . -t thorup/codedechan
-  269  docker images ls
-  270  docker image ls
-  271  docker run -i -t thorup/codedechan
-  272  docker run -i -t thorup/codedechan:latest
-  273  nano Dockerfile 
+   48  cat Dockerfile 
+   49  nano Dockerfile 
+   50  docker build . -t thorup/codedechan
+   51  docker image ls
+   52  docker run -i -t thorup/codedechan:latest
+   53  nano Dockerfile 
   274  docker run -i -t thorup/codedechan:latest
-  275  docker run -i -t thorup/codedechan:2
   276  docker rm image 50655cda9e71
   277  docker rmi image thorup/codedechan
   278  docker rmi 50655cda9e71
   279  docker stop
   280  docker stop thorup/codedechan
-  281  docker containers ls
   282  docker container
   283  docker container ls
   284  docker container ps
@@ -288,7 +67,6 @@
   288  docker rmi 50655cda9e71
   289  docker rmi 50655cda9e71 -f
   290  docker build . -t thorup/codedechan:latest
-  291* docker build . -t thorup/codedechan:latest
   292  nano Dockerfile 
   293  docker build . -t thorup/codedechan:latest
   294  docker run -i -t thorup/codedechan:latest
@@ -305,28 +83,11 @@
   305  git push
   306  docker run -i -t thorup/codedechan:latest
   307  docker build . -t thorup/codedechan:latest
-  308  docker run -i -t thorup/codedechan:latest
   309  nano Dockerfile 
-  310  docker build . -t thorup/codedechan:latest
-  311  docker run -i -t thorup/codedechan:latest
-  312  nano Dockerfile 
-  313  docker build . -t thorup/codedechan:latest
-  314  docker run -i -t thorup/codedechan:latest
-  315  nano Dockerfile 
-  316  docker build . -t thorup/codedechan:latest
-  317  docker run -i -t thorup/codedechan:latest
-  318  nano Dockerfile
-  319  docker build . -t thorup/codedechan:latest
-  320  docker run -i -t thorup/codedechan:latest
-  321  nano Dockerfile 
   322  docker build . -t thorup/codedechan:latest
   323  docker images ls
   324  docker image ls
   325  docker run -i -t thorup/codedechan:latest
-  326  nano Dockerfile 
-  327  docker build . -t thorup/codedechan:latest
-  328  docker run -i -t thorup/codedechan:latest
-  329  ls
   330  nano Dockerfile 
   331  docker build . -t thorup/codedechan:latest
   332  docker run -i -t thorup/codedechan:latest
@@ -345,13 +106,9 @@
   345  docker ps
   346  docker run -i -t -p 5000:5000 thorup/codedechan:latest
   347  nano Dockerfile 
-  348  docker build . -t thorup/codedechan:latest
-  349  docker run -i -t -p 5000:5000 thorup/codedechan:latest
-  350  nano Dockerfile
   351  git add Dockerfile 
   352  git commit -m "Modified dockerfile"
   353  git push
   354  ls
   355  touch codeDeChanLog.txt
   356  nano codeDeChanLog.txt 
-  357  history
