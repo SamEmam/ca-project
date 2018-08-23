@@ -18,8 +18,8 @@ node(''){
         sh 'docker build . -t samemam/codedechan:latest'
     }
     stage('publish'){
-        withDockerRegistry(credentialsId: '5fcbc690-a6e2-11e8-b826-ad15df0018ad') {
-            sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
+        withDockerRegistry(credentialsId: 'samemam', url: "https://hub.docker.com/u/samemam/") {
+            //sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
             sh 'docker push samemam/decochan:latest'
         }   
     }
