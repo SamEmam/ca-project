@@ -11,6 +11,8 @@ WORKDIR /ca-project
 
 RUN pip install -r requirements.txt
 
-RUN python run.py
+COPY ./ca-project/requirements.txt .
 
-#CMD ["toilet", "-F border --gay"]
+COPY ./ca-project/run.py .
+
+CMD ["python run.py"]
