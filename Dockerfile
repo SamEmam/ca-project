@@ -6,8 +6,6 @@ RUN apt-get install -y python-pip
 
 COPY . .
 
-WORKDIR ca-project/
-
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
