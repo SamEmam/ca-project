@@ -6,7 +6,7 @@ node(''){
       checkout([$class: 'GitSCM', branches: [[name: '*/ready/**']], 
       doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CleanBeforeCheckout'], 
       pretestedIntegration(gitIntegrationStrategy: accumulated(), integrationBranch: 'master', 
-      repoName: 'origin')], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'SamEmam', 
+      repoName: 'origin')], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'samemam', 
       url: 'git@github.com:SamEmam/ca-project.git']]])
 
       
