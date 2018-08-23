@@ -9,13 +9,10 @@ node(''){
       repoName: 'origin')], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'SamEmam', 
       url: 'git@github.com:SamEmam/ca-project.git']]])
 
-      
-      stash name: "repo", includes: "**", useDefaultExcludes: false   
     }
     stage('Push'){
         pretestedIntegrationPublisher()
 
-        deleteDir()
     }
     stage ('Build'){
         sh 'docker build . -t samemam/codedechan:latest'
