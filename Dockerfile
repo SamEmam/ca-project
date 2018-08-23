@@ -11,8 +11,6 @@ WORKDIR /ca-project
 
 RUN pip install -r requirements.txt
 
-COPY ./ca-project/requirements.txt .
-
-COPY ./ca-project/run.py .
+COPY . .
 
 CMD ["python run.py"]
