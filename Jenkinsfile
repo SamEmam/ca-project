@@ -21,7 +21,7 @@ node(''){
         sh 'docker run --rm -i -d -p 5000:5000 --name sampain samemam/codedechan:latest'
     }
     stage('curlCheat'){
-        sh 'sleep 2[s]'
+        sh 'sleep 2'
         sh 'curl localhost:5000'
     }
     stage('close image'){
