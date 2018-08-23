@@ -1,3 +1,4 @@
+sudo apt install python-pip
 sudo apt install python-minimal
 sudo apt install python3
 sudo pip install flask
