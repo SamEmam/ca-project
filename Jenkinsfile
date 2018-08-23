@@ -19,7 +19,7 @@ node(''){
     }
     stage('publish'){
         withDockerRegistry(credentialsId: 'samemam', url: "https://hub.docker.com/u/samemam/") {
-            //sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
+            sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
             sh 'docker push samemam/decochan:latest'
         }   
     }
